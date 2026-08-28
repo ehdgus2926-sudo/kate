@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>계룡산 산악회 | 함께 오르는 산, 함께 만드는 추억</title>
+<style>
+:root{--green:#1f5d3b;--light:#eef6f0;--gold:#d8a84e;--dark:#183128}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans KR","Malgun Gothic",Arial,sans-serif;color:#26342d;background:#f6f7f5;line-height:1.65}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);box-shadow:0 2px 12px #0001}
+.nav{max-width:1200px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.35rem;font-weight:800;color:var(--green);white-space:nowrap}.menu{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}.menu a:hover{color:var(--green);font-weight:bold}
+.hero{min-height:620px;display:grid;place-items:center;text-align:center;color:#fff;padding:40px 20px;background:linear-gradient(180deg,#123a2aaa,#123a2a77),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero h1{font-size:clamp(2.6rem,7vw,5.5rem);margin:0;text-shadow:0 3px 15px #000}.hero p{font-size:1.25rem}.badges{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px 0}.badge{padding:9px 16px;background:#ffffff24;border:1px solid #fff7;border-radius:99px}
+.btn{display:inline-block;padding:13px 24px;border-radius:8px;background:var(--gold);color:#fff;font-weight:bold;margin:5px}.btn.alt{background:var(--green)}
+section{max-width:1200px;margin:auto;padding:72px 22px}.title{text-align:center;margin-bottom:38px}.title h2{font-size:2rem;margin:0;color:var(--green)}.title p{color:#69736d}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 5px 18px #1a39210d}.card h3{margin-top:0;color:var(--green)}
+.info{background:var(--light)}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.info-item{background:#fff;padding:20px;border-radius:14px;text-align:center}.info-item b{display:block;font-size:1.05rem;color:var(--green)}
+.schedule{overflow-x:auto}.schedule table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden}.schedule th,.schedule td{padding:16px;border-bottom:1px solid #e8ece9;text-align:center}.schedule th{background:var(--green);color:#fff}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery img{width:100%;height:220px;object-fit:cover;border-radius:14px;transition:.2s}.gallery img:hover{transform:scale(1.02)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{background:#fff;border-left:5px solid var(--gold);padding:22px;border-radius:12px}.step span{font-size:2rem;font-weight:bold;color:var(--gold)}
+.notice{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.list{background:#fff;border-radius:14px;padding:18px}.list li{padding:12px 4px;border-bottom:1px solid #eee;list-style:none}.list li:last-child{border:0}
+.leaders{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.leader{background:#fff;padding:20px 12px;text-align:center;border-radius:14px}.avatar{width:70px;height:70px;border-radius:50%;margin:0 auto 10px;display:grid;place-items:center;background:#dcecdf;font-size:1.8rem}
+.rules li{margin:9px 0}.faq details{background:#fff;padding:16px 20px;margin:10px 0;border-radius:10px}.faq summary{cursor:pointer;font-weight:bold}
+footer{background:var(--dark);color:#dce7df;padding:40px 22px;text-align:center}.small{font-size:.9rem;color:#8d9992}
+@media(max-width:850px){.grid,.info-grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.leaders{grid-template-columns:repeat(3,1fr)}.notice{grid-template-columns:1fr}.menu{display:none}.hero{min-height:540px}}
+@media(max-width:520px){.grid,.info-grid,.steps{grid-template-columns:1fr}.leaders{grid-template-columns:1fr 1fr}.nav{padding:12px 15px}section{padding:55px 15px}.hero h1{font-size:2.8rem}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="#home">🏔️ 계룡산 산악회</a><nav class="menu">
+<a href="#about">소개</a><a href="#schedule">산행일정</a><a href="#apply">산행신청</a><a href="#gallery">사진방</a><a href="#review">산행후기</a><a href="#rules">회칙</a><a href="#leaders">운영진</a>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div>
+<h1>함께 오르는 산<br>함께 만드는 추억</h1>
+<p>건강한 산행 · 좋은 친구 · 아름다운 자연</p>
+<div class="badges"><span class="badge">🥾 매월 첫째·셋째 토요일</span><span class="badge">🕕 오전 6시 출발</span><span class="badge">📍 한국대학교 정문 앞</span></div>
+<a class="btn" href="#schedule">다음 산행 보기</a><a class="btn alt" href="#apply">산행 신청 안내</a>
+</div></section>
+
+<section id="about"><div class="title"><h2>계룡산 산악회 소개</h2><p>산을 사랑하는 사람들이 함께 걷는 건강하고 즐거운 모임입니다.</p></div>
+<div class="grid"><article class="card"><h3>🥾 건강한 산행</h3><p>대전에 거주하는 40대~60대의 신체 건강한 남성 회원들이 정기적으로 함께 산행합니다.</p></article>
+<article class="card"><h3>🤝 즐거운 친목</h3><p>산행을 통해 새로운 친구를 만나고 서로 배려하며 좋은 인연을 만들어갑니다.</p></article>
+<article class="card"><h3>🌲 자연과 안전</h3><p>자연을 사랑하고 안전수칙을 지키며 책임 있는 산행 문화를 만들어갑니다.</p></article></div></section>
+
+<section class="info"><div class="title"><h2>정기 산행 안내</h2><p>참가 전 아래 내용을 꼭 확인해 주세요.</p></div>
+<div class="info-grid">
+<div class="info-item"><b>📅 산행일</b>매월 첫째 · 셋째 토요일</div>
+<div class="info-item"><b>🕕 출발시간</b>오전 06:00</div>
+<div class="info-item"><b>📍 집결장소</b>한국대학교 정문 앞</div>
+<div class="info-item"><b>📝 신청시간</b>산행 전주 일요일 오전 8시</div>
+<div class="info-item"><b>💰 산행회비</b>1회 50,000원</div>
+<div class="info-item"><b>🚗 회비 포함</b>차량비 및 저녁 식사비</div>
+</div></section>
+
+<section id="schedule" class="schedule"><div class="title"><h2>월 산행 예정</h2><p>실제 산행지와 난이도는 운영진 공지에 따라 업데이트할 수 있습니다.</p></div>
+<table><thead><tr><th>구분</th><th>산행일</th><th>산행지</th><th>난이도</th><th>출발</th></tr></thead>
+<tbody><tr><td>제1 정기산행</td><td>매월 첫째 토요일</td><td>산행 공지 참조</td><td>중</td><td>06:00</td></tr>
+<tr><td>제2 정기산행</td><td>매월 셋째 토요일</td><td>산행 공지 참조</td><td>중</td><td>06:00</td></tr></tbody></table></section>
+
+<section id="apply"><div class="title"><h2>회원 가입 및 산행 신청</h2><p>처음 오신 분도 아래 절차에 따라 쉽게 참여할 수 있습니다.</p></div>
+<div class="steps"><div class="step"><span>01</span><h3>회원 가입</h3><p>가입 자격을 확인하고 산악회 카페 또는 홈페이지 가입 절차를 진행합니다.</p></div>
+<div class="step"><span>02</span><h3>첫 방문 인사</h3><p>이름 또는 닉네임, 거주 지역, 연령대, 등산 경험과 함께 간단한 인사를 남겨주세요.</p></div>
+<div class="step"><span>03</span><h3>산행 신청</h3><p>산행 출발 전주 일요일 오전 8시부터 공지된 게시글에서 신청합니다.</p></div></div>
+<div class="card" style="margin-top:24px"><h3>가입 자격</h3><p>✓ 대전 거주자 &nbsp; ✓ 40대~60대 남성 &nbsp; ✓ 신체 건강하여 산행 가능한 분 &nbsp; ✓ 회칙 및 안전수칙 준수 &nbsp; ✓ 회원 간 예절과 배려를 실천할 수 있는 분</p>
+<a class="btn alt" href="#contact">가입 문의하기</a></div></section>
+
+<section id="gallery"><div class="title"><h2>산행 사진방</h2><p>함께한 순간과 아름다운 산의 풍경을 기록합니다.</p></div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80" alt="등산 풍경">
+<img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=800&q=80" alt="산 정상">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="산과 자연">
+<img src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=800&q=80" alt="등산길">
+</div></section>
+
+<section id="review" class="info"><div class="title"><h2>산행 후기방</h2><p>회원들의 생생한 산행 이야기</p></div>
+<div class="grid"><article class="card"><h3>🏔️ 함께라서 즐거웠던 산행</h3><p>맑은 공기와 아름다운 풍경 속에서 회원들과 즐겁게 걸었습니다. 정상에서 함께한 웃음이 오래 기억에 남습니다.</p></article>
+<article class="card"><h3>🌄 새로운 산, 새로운 추억</h3><p>힘든 오르막도 있었지만 서로 격려하며 끝까지 완주했습니다. 다음 산행도 기대됩니다.</p></article>
+<article class="card"><h3>🤝 산에서 만난 좋은 인연</h3><p>산행 후 함께 나눈 식사와 이야기가 또 하나의 즐거운 추억이 되었습니다.</p></article></div></section>
+
+<section id="rules"><div class="title"><h2>회칙 및 안전 산행 수칙</h2><p>모두가 즐거운 산행을 위해 함께 지켜주세요.</p></div>
+<div class="grid"><div class="card"><h3>📜 기본 회칙</h3><ol class="rules"><li>회원의 건강 증진과 친목 도모를 목적으로 합니다.</li><li>정기 산행은 매월 첫째·셋째 토요일에 실시합니다.</li><li>회원은 운영 방침과 회칙을 준수합니다.</li><li>회비는 산행 운영 목적에 맞게 사용합니다.</li><li>회원 간 상호 존중과 배려를 실천합니다.</li></ol></div>
+<div class="card"><h3>⛑️ 안전수칙</h3><ol class="rules"><li>산행 전 건강 상태를 확인합니다.</li><li>산행대장의 안내를 준수합니다.</li><li>단체 안전을 개인 행동보다 우선합니다.</li><li>충분한 물과 개인 장비를 준비합니다.</li><li>지정된 산행 코스를 벗어나지 않습니다.</li><li>쓰레기는 반드시 되가져옵니다.</li></ol></div>
+<div class="card"><h3>🎒 준비물 안내</h3><p>등산화, 배낭, 물, 간식, 계절에 맞는 의류, 개인 상비용품을 준비해 주세요.</p><p>날씨와 산행지에 따라 추가 장비가 필요할 수 있으므로 산행 공지를 확인합니다.</p></div></div></section>
+
+<section id="leaders"><div class="title"><h2>운영진 소개</h2><p>계룡산 산악회를 함께 이끌어가는 사람들입니다.</p></div>
+<div class="leaders">
+<div class="leader"><div class="avatar">👑</div><b>회장</b><p class="small">산악회 대표 및 운영 총괄</p></div>
+<div class="leader"><div class="avatar">💼</div><b>총무</b><p class="small">회비 및 행정 업무</p></div>
+<div class="leader"><div class="avatar">🥾</div><b>산행대장</b><p class="small">산행 진행 및 안전 관리</p></div>
+<div class="leader"><div class="avatar">🎖️</div><b>고문</b><p class="small">운영 자문 및 지원</p></div>
+<div class="leader"><div class="avatar">👥</div><b>운영위원</b><p class="small">행사 및 회원 활동 지원</p></div>
+</div></section>
+
+<section><div class="notice"><div><div class="title" style="text-align:left;margin-bottom:18px"><h2>📢 공지사항</h2></div><ul class="list"><li>정기 산행 일정 및 신청 방법 안내</li><li>산행 전 개인 장비와 건강 상태를 확인해 주세요.</li><li>우천 또는 기상 악화 시 산행 일정이 변경될 수 있습니다.</li><li>회원 여러분의 안전하고 즐거운 산행을 부탁드립니다.</li></ul></div>
+<div class="faq"><div class="title" style="text-align:left;margin-bottom:18px"><h2>❓ 자주 묻는 질문</h2></div>
+<details><summary>등산 초보도 가입할 수 있나요?</summary><p>건강상 산행에 문제가 없고 가입 자격을 충족하면 참여할 수 있습니다.</p></details>
+<details><summary>매번 산행에 참석해야 하나요?</summary><p>개인의 일정에 맞춰 가능한 산행에 참여할 수 있습니다.</p></details>
+<details><summary>산행 신청은 언제 하나요?</summary><p>산행 출발 전주 일요일 오전 8시부터 신청합니다.</p></details></div></div></section>
+
+<section id="contact" class="info"><div class="title"><h2>문의하기</h2><p>가입 및 산행 관련 문의는 운영진에게 연락해 주세요.</p><a class="btn" href="#home">🏔️ 계룡산 산악회 홈으로</a></div></section>
+</main>
+<footer><h2>🏔️ 계룡산 산악회</h2><p>함께 걷고 · 함께 웃고 · 건강한 인생을 만들어갑니다.</p><p class="small">© 계룡산 산악회. All Rights Reserved.</p></footer>
+</body></html>
